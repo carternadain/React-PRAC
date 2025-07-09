@@ -1,35 +1,30 @@
-import { createRoot } from "react-dom/client"
+import {createRoot} from "react-dom/client"
 
-
-
-
-function MyCompenent (){
-    return(
-        <h1>
-           
-        </h1>
+function staticPage (){
+    return (
+        <section>
+            <img src="src/assets/react.svg"/>
+            <h1> hello! </h1>
+        </section>
+      
     )
 }
 
-export default MyCompenent
+export default staticPage 
 
 
-/* 
-Challenge - recreate the above line of code in vanilla JS by creating and
-appending an h1 to our div#root (without using innerHTML).
+/*
+Challenge: Starting from scratch, build and render the 
+HTML for our section project. Check the Google slide for 
+what you're trying to build.
 
-- Create a new h1 element (createElement)
-- Give it some textContent
-- Give it a class name of "header"
-- append it as a child (using `appendChild`) of the div#root
+We'll be adding more styling to it later.
 
-Don't use innerHTML to accomplish any of this.
-    
-*/
-
-const h1 = document.createElement('h1')
-h1.textContent = "raect is so cool!"
-h1.className ="header"
-
-const root = document.getElementById('root')
-root.appendChild(h1)
+Hints:
+* The React logo is a file in the project tree, so you can
+  access it by using `src="react-logo.png"` in your image
+  element
+* You can also set the `width` attribute of the image element
+  just like in HTML. In the slide, I have it set to 40px
+ */
+ 

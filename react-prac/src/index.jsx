@@ -14,14 +14,47 @@ import { createRoot } from "react-dom/client";
 //     "© 20xx <last name here> development. All rights reserved."
 //  */////
 
+function Header () {
+    return (
+    <header> <img src="/src/assets/react.svg" alt="react logo" /> 
+    <section> <h1>React facts! </h1> </section>
+   </header>
+    )
+}
+
+function MainContent () {
+    return (
+        <main>
+        <h1>
+        this is the facts!
+    </h1>
+<ol>
+<li>React is a popular library, so I will be able to fit in with all the coolest developers out there! 😎</li>
+<li>I am more likely to get a job as a front-end developer if I know React</li>
+</ol>
+</main>
+    )
+}
+
+function Footer () {
+    return(
+        <footer>
+        © 20xx Nadain development. All rights reserved.
+        </footer>
+    )
+}
 
 function TestFunc () {
   return  (
-        <header> <img src="" alt="react logo" /> 
-        <section> <h1>React facts! </h1> </section>
-       </header>
-  
-       
+      <div>
+     
+   
+     <Header/>
+    <MainContent/>
+    <Footer/>
+   
+       </div>
+      
     )
 }
 

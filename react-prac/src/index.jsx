@@ -16,8 +16,24 @@ import { createRoot } from "react-dom/client";
 
 function Header () {
     return (
-    <header> <img src="/src/assets/react.svg" alt="react logo" /> 
-    <section> <h1>React facts! </h1> </section>
+    <header className="header"> <img src="/src/assets/react.svg" alt="react logo" /> 
+
+
+   
+        <nav>
+            <ul className="nav-list">
+                <li className="nav-list-item">
+                    pricing
+                </li>
+                <li className="nav-list-item">
+                    about
+                </li>   
+                <li className="nav-list-item">
+                    contact
+                </li>   
+            </ul>
+        </nav>
+    
    </header>
     )
 }

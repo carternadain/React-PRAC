@@ -1,11 +1,10 @@
-function Header() {
-  return (
-    <header>
-      <main>
-      <h1>My Travel Journal</h1>
-      </main>
-    </header>
-  );
-}
+import globeImg from '../assets/globe.png';
 
-export default Header;
+export default function Header() {
+    return (
+        <header>
+            <img src={globeImg} alt="globe icon" />
+            <h1>my travel journal.</h1>
+        </header>
+    )
+}
